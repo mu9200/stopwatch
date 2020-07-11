@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <form name="calcu">
+            <input type="text" value=" Mudasar's Calculator" id="app_name">
+            <input type="text" name="ans" id="reslult">
+
+            <div class="line2">
+                <input type="button" value="C" id="clearbtn" onclick="calcu.ans.value = '0' ">
+                <input type="button" value="=" onclick="calcu.ans.value = eval(calcu.ans.value)  ">
+
+
+            </div>
+
+            <div class="line1">
+                <input type="button" class="mian_num" value="7" onclick="calcu.ans.value += '7' ">
+                <input type="button" class="mian_num" value="8" onclick="calcu.ans.value += '8' ">
+                <input type="button" class="mian_num" value="9" onclick="calcu.ans.value += '9' ">
+                <input type="button" class="operator" value="*" onclick="calcu.ans.value += '*' ">
+
+            </div>
+            <div class="line1">
+                <input type="button" class="mian_num" value="4" onclick="calcu.ans.value += '4' ">
+                <input type="button" class="mian_num" value="5" onclick="calcu.ans.value += '5' ">
+                <input type="button" class="mian_num" value="6" onclick="calcu.ans.value += '6' ">
+                <input type="button" class="operator" value="-" onclick="calcu.ans.value += '-' ">
+
+            </div>
+            <div class="line1">
+                <input type="button" class="mian_num" value="1" onclick="calcu.ans.value += '1' ">
+                <input type="button" class="mian_num" value="2" onclick="calcu.ans.value += '2' ">
+                <input type="button" class="mian_num" value="3" onclick="calcu.ans.value += '3' ">
+                <input type="button" class="operator" value="+" onclick="calcu.ans.value += '+' ">
+
+            </div>
+            <div class="line1">
+                <input type="button" class="operator" value="." onclick="calcu.ans.value += '.' ">
+                <input type="button" class="mian_num" value="0" onclick="calcu.ans.value += '0' ">
+                <input type="button" class="operator" value="%" onclick="calcu.ans.value += '%' ">
+                <input type="button" class="operator" value="/" onclick="calcu.ans.value += '/' ">
+
+            </div>
+
+
+
+    </div>
+
+    </form>
+
+    </div>
+</body>
+
+</html>
